@@ -9,21 +9,11 @@ import sys
 import os
 
 # Adiciona o diretório 'src' ao caminho de pesquisa de módulos
-src_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'src'))
-sys.path.append(src_path)
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), r'C:\Users\Diogo Chikhi\OneDrive\Ambiente de Trabalho\Faculdade\4ano\AAI')))
 
-# Verifique se o diretório foi adicionado corretamente
-print("Caminho atual de busca por módulos:", sys.path)
-
-# Agora, tente importar os módulos
-try:
-    from Short_features import filter_features
-    from extractfilesfinal import extract
-    print("Módulos importados com sucesso.")
-except Exception as e:
-    print("Erro ao importar módulos:", e)
-
-# Continue com o restante do seu código...
+# Agora você pode importar seus módulos
+from Short_features import filter_features
+from extractfilesfinal import extract
 
 # Seu código continua aqui...
 
