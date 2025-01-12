@@ -155,7 +155,7 @@ def segunda_pagina():
             print(msg.topic+" "+str(msg.payload))
         
         # Diretório onde o ficheiro será salvo
-            save_directory = r"C:\Users\Diogo Chikhi\OneDrive\Ambiente de Trabalho\Faculdade\4ano\AAI\lab6\dado de teste"
+            save_directory = "C:/Users/Diogo Chikhi/OneDrive/Ambiente de Trabalho/Faculdade/4ano/AAI/lab6/dado de teste"
             os.makedirs(save_directory, exist_ok=True)  # Certifica-se de que o diretório existe
 
             file_path = os.path.join(save_directory, "received_file.txt")  # Caminho completo do ficheiro
@@ -310,7 +310,7 @@ def segunda_pagina():
     st.write('')
   
     # Selecionar o diretório com os dados
-    samples_path = r"C:\Users\Diogo Chikhi\OneDrive\Ambiente de Trabalho\Faculdade\4ano\AAI\lab6\dados de teste"
+    samples_path = "C:/Users/Diogo Chikhi/OneDrive/Ambiente de Trabalho/Faculdade/4ano/AAI/lab6/dados de teste"
 
     
 
