@@ -25,6 +25,21 @@ import paho.mqtt.publish as publish
 from streamlit_autorefresh import st_autorefresh
 import uuid
 
+
+def extract(path):
+    # Validate if the path exists
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"The specified directory does not exist: {path}")
+    
+    # Check if the directory contains .txt files
+    file_list = [os.path.join(path, file) for file in os.listdir(path) if file.endswith(".txt")]
+    if not file_list:
+        raise FileNotFoundError(f"No .txt files found in the directory: {path}")
+    
+    print(f"Found {len(file_list)} .txt files in {path}")
+    # Proceed with processing the files
+    # Your file processing logic here
+
 # Configurações do dispositivo BLE
 DEVICE_NAME = "NEVESBP"
 SERVICE_UUID = uuid.UUID("9a27ed68-4948-4029-b666-8bc9a12ab4e2")
