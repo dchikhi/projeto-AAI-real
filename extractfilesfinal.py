@@ -11,7 +11,7 @@ import re
 import os
 
 # Diretoria com os ficheiros
-directory = r"C:\Users\Diogo Chikhi\OneDrive\Ambiente de Trabalho\Faculdade\4ano\AAI\lab6\dados"  # Substitua pelo caminho da sua diretoria
+directory = "C:/Users/Diogo Chikhi/OneDrive/Ambiente de Trabalho/Faculdade/4ano/AAI/lab6/dados"  # Substitua pelo caminho da sua diretoria
 
 
 def extract(path):
