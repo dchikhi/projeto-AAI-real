@@ -4,3 +4,4 @@ pandas
 paho-mqtt
 streamlit-autorefresh
 uuid
+tsfel
