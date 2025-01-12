@@ -4,6 +4,16 @@ Created on Thu Jan  9 16:08:06 2025
 
 @author: Diogo Chikhi
 """
+import sys
+import os
+
+# Adiciona o diretório 'src' ao caminho de pesquisa de módulos
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'src')))
+
+# Agora você pode importar seus módulos normalmente
+from Short_features import filter_features
+from extractfilesfinal import extract
+
 from streamlit.components.v1 import html
 import time
 
