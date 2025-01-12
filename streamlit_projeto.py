@@ -6,8 +6,7 @@ Created on Thu Jan  9 16:08:06 2025
 """
 
 
-import sys
-sys.path.append(r'C:\Users\Diogo Chikhi\OneDrive\Ambiente de Trabalho\Faculdade\4ano\AAI|extractfilesfinal')
+
 
 from streamlit.components.v1 import html
 import time
