@@ -14,8 +14,8 @@ import time
 import streamlit as st
 import os
 from sklearn.preprocessing import StandardScaler
-from Short_features import filter_features
-from SVM_Leave_one_out import modelo
+from short_telemovel import filter_features
+from leave_one_tele import modelo
 import pandas as pd
 import streamlit.components.v1 as components
 from streamlit.runtime.scriptrunner import add_script_run_ctx
